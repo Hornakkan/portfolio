@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio by Sebastien Lacour",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/sass/main.scss:./style/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hornakkan/portfolio.git"
+  },
+  "author": "Sebastien Lacour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hornakkan/portfolio/issues"
+  },
+  "homepage": "https://github.com/Hornakkan/portfolio#readme"
+}
