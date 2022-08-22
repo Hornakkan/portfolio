@@ -13,13 +13,21 @@ body {
   height: 100vh;
 }
 
+.skills {
+  background-color: #f9f9f9;
+  width: 100vw;
+  height: 100vh;
+}
 .skills--title {
   font-family: sans-serif, "Roboto", "Montserrat";
   font-size: 25px;
+  margin: 10px 50px;
 }
 .skills--subtitle {
   font-family: sans-serif, "Roboto", "Montserrat";
   font-size: 16px;
+  font-style: italic;
+  margin: 10px 50px;
 }
 .skills--list {
   display: flex;

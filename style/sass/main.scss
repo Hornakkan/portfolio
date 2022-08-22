@@ -15,13 +15,19 @@ body {
 }
 
 .skills {
+    background-color: $skillsBgColor;
+    width: 100vw;
+    height: 100vh;
     &--title {
         font-family: $fontFamily;
         font-size: 25px;
+        margin: $titleMargin;
     }
     &--subtitle {
         font-family: $fontFamily;
         font-size: 16px;
+        font-style: italic;
+        margin: $subtitleMargin;
     }
     &--list {
         display: flex;
