@@ -17,6 +17,11 @@ body {
 .skills {
     &--title {
         font-family: $fontFamily;
+        font-size: 25px;
+    }
+    &--subtitle {
+        font-family: $fontFamily;
+        font-size: 16px;
     }
     &--list {
         display: flex;

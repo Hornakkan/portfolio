@@ -15,6 +15,11 @@ body {
 
 .skills--title {
   font-family: sans-serif, "Roboto", "Montserrat";
+  font-size: 25px;
+}
+.skills--subtitle {
+  font-family: sans-serif, "Roboto", "Montserrat";
+  font-size: 16px;
 }
 .skills--list {
   display: flex;
