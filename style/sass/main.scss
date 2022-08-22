@@ -5,4 +5,140 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.skills {
+    &--title {
+        font-family: $fontFamily;
+    }
+    &--list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 80%;
+        &--wrapper {
+            width: 60px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        &--logo {
+            & i {
+                font-size: 50px;
+                color: $skillsLogoGray;
+                &.devicon-html5-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg');
+                    }
+                }
+                &.devicon-css3-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg');
+                    }
+                }
+                &.devicon-bootstrap-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg');
+                    }
+                }
+                &.devicon-sass-original {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg');
+                    }
+                }
+                &.devicon-javascript-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg');
+                    }
+                }
+                &.devicon-vuejs-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg');
+                    }
+                }
+                &.devicon-vscode-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg');
+                    }
+                }
+                &.devicon-gimp-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg');
+                    }
+                }
+                &.devicon-figma-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg');
+                    }
+                }
+                &.devicon-bash-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg');
+                    }
+                }
+                &.devicon-mysql-plain-wordmark {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg');
+                    }
+                }
+                &.devicon-php-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg');
+                    }
+                }
+                &.devicon-laravel-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg');
+                    }
+                }
+                &.devicon-git-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg');
+                    }
+                }
+                &.devicon-github-plain {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg');
+                    }
+                }
+                &.devicon-npm-original-wordmark {
+                    &:hover {
+                        color: transparent;
+                        background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg');
+                    }
+                }
+            }
+        }
+        &--name {
+            font-family: $fontFamily;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
 }

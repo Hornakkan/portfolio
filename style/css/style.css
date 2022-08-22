@@ -1,7 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 *, ::before, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.skills--title {
+  font-family: sans-serif, "Roboto", "Montserrat";
+}
+.skills--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+}
+.skills--list--wrapper {
+  width: 60px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.skills--list--logo i {
+  font-size: 50px;
+  color: #7a7a7a;
+}
+.skills--list--logo i.devicon-html5-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg");
+}
+.skills--list--logo i.devicon-css3-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg");
+}
+.skills--list--logo i.devicon-bootstrap-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg");
+}
+.skills--list--logo i.devicon-sass-original:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg");
+}
+.skills--list--logo i.devicon-javascript-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg");
+}
+.skills--list--logo i.devicon-vuejs-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg");
+}
+.skills--list--logo i.devicon-vscode-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg");
+}
+.skills--list--logo i.devicon-gimp-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg");
+}
+.skills--list--logo i.devicon-figma-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg");
+}
+.skills--list--logo i.devicon-bash-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg");
+}
+.skills--list--logo i.devicon-mysql-plain-wordmark:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg");
+}
+.skills--list--logo i.devicon-php-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg");
+}
+.skills--list--logo i.devicon-laravel-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg");
+}
+.skills--list--logo i.devicon-git-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg");
+}
+.skills--list--logo i.devicon-github-plain:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
+}
+.skills--list--logo i.devicon-npm-original-wordmark:hover {
+  color: transparent;
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg");
+}
+.skills--list--name {
+  font-family: sans-serif, "Roboto", "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
