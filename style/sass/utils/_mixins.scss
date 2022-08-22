@@ -1,0 +1,14 @@
+@import "./variables";
+
+@mixin section-footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    & a {
+        margin: $footerMargin;
+    }
+    & i {
+        font-size: 40px;
+        color: $arrowColor;
+    }
+}

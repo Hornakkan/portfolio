@@ -1,7 +1,8 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./utils/keyframes";
 
-*, ::before, ::before {
+*, ::after, ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,24 +11,50 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
+}
+
+.home {
+    background-color: $homeBgColor;
+    width: 100%;
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    &--content {
+        flex: 1 0 auto;
+        width: 90%;
+        margin: $contentMargin;
+    }
+    &--footer {
+        @include section-footer     
+    }
 }
 
 .skills {
     background-color: $skillsBgColor;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     &--title {
+        display: flex;
+        justify-content: space-between;
         font-family: $fontFamily;
         font-size: 25px;
         margin: $titleMargin;
+        & i {
+            font-size: 40px;
+            color: $arrowColor;
+        }
     }
     &--subtitle {
         font-family: $fontFamily;
         font-size: 16px;
         font-style: italic;
         margin: $subtitleMargin;
+    }
+    &--content {
+        flex: 1 0 auto;
     }
     &--list {
         display: flex;
@@ -151,5 +178,8 @@ body {
             font-size: 16px;
             font-weight: 600;
         }
+    }
+    &--footer {
+        @include section-footer     
     }
 }
