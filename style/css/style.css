@@ -21,12 +21,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+.home--title {
+  height: 5%;
+}
 .home--content {
   flex: 1 0 auto;
   width: 90%;
+  height: 80%;
+  overflow: hidden;
   margin: 0 auto;
 }
 .home--footer {
+  height: 10%;
   display: flex;
   width: 100%;
   justify-content: flex-end;
@@ -47,6 +53,7 @@ body {
   flex-direction: column;
 }
 .skills--title {
+  height: 10%;
   display: flex;
   justify-content: space-between;
   font-family: sans-serif, "Roboto", "Montserrat";
@@ -58,12 +65,14 @@ body {
   color: #8f56c4;
 }
 .skills--subtitle {
+  height: 5%;
   font-family: sans-serif, "Roboto", "Montserrat";
   font-size: 16px;
   font-style: italic;
   margin: 0 50px;
 }
 .skills--content {
+  height: 75%;
   flex: 1 0 auto;
 }
 .skills--list {
@@ -156,6 +165,7 @@ body {
   font-weight: 600;
 }
 .skills--footer {
+  height: 10%;
   display: flex;
   width: 100%;
   justify-content: flex-end;

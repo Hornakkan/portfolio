@@ -20,12 +20,18 @@ body {
     height: 100vh;    
     display: flex;
     flex-direction: column;
+    &--title {
+        height: 5%;
+    }
     &--content {
         flex: 1 0 auto;
         width: 90%;
+        height: 80%;
+        overflow: hidden;
         margin: $contentMargin;
     }
     &--footer {
+        height:10%;
         @include section-footer     
     }
 }
@@ -37,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     &--title {
+        height: 10%;
         display: flex;
         justify-content: space-between;
         font-family: $fontFamily;
@@ -48,12 +55,14 @@ body {
         }
     }
     &--subtitle {
+        height: 5%;
         font-family: $fontFamily;
         font-size: 16px;
         font-style: italic;
         margin: $subtitleMargin;
     }
     &--content {
+        height: 75%;
         flex: 1 0 auto;
     }
     &--list {
@@ -180,6 +189,7 @@ body {
         }
     }
     &--footer {
+        height: 10%;
         @include section-footer     
     }
 }
