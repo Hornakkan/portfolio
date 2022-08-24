@@ -14,6 +14,19 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .home {
     background-color: $homeBgColor;
     width: 100%;
@@ -31,7 +44,7 @@ body {
         margin: $contentMargin;
     }
     &--footer {
-        height:10%;
+        height:5%;
         @include section-footer     
     }
 }
@@ -43,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     &--title {
-        height: 10%;
+        height: 5%;
         display: flex;
         justify-content: space-between;
         font-family: $fontFamily;
@@ -62,7 +75,7 @@ body {
         margin: $subtitleMargin;
     }
     &--content {
-        height: 75%;
+        height: 85%;
         flex: 1 0 auto;
     }
     &--list {
@@ -189,7 +202,145 @@ body {
         }
     }
     &--footer {
-        height: 10%;
+        height: 5%;
         @include section-footer     
     }
+}
+
+.projects {
+    background-color: $projectsBgColor;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    &--title {
+        height: 5%;
+        display: flex;
+        justify-content: space-between;
+        font-family: $fontFamily;
+        font-size: 25px;
+        margin: $titleMargin;
+        & i {
+            font-size: 40px;
+            color: $arrowColor;
+        }
+    }
+    &--subtitle {
+        height: 5%;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-style: italic;
+        margin: $subtitleMargin;
+    }
+    &--content {
+        height: 85%;
+        width: 90%;
+        margin: 0 auto;
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &--card {
+        width: 350px;
+        height: 60%;
+        background-color: $cardBgColor;
+        border: $cardBorder;
+        border-radius: $cardRadius;
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        &--picture {
+            height: 40%;
+            display: flex;
+            & img {
+                width: 90%;
+                margin: 10px auto;
+                border-radius: $pictureRadius;
+            }
+            &--soon {
+                & img {
+                    width: 310px;
+                    height: 150px;
+                    margin: 10px auto;
+                    border-radius: $pictureRadius;
+                    filter: blur(0.2rem);
+                }
+            }
+        }
+        &--content {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            &--soon {
+                height: 230px;
+                &--title {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 18px;
+                    font-style: italic;
+                }
+                &--description {
+                    text-align: center;
+                    filter: blur(0.2rem);
+                }
+            }
+            &--title {
+                height: 10%;
+                text-align: center;
+                font-weight: 600;
+                font-size: 18px;
+            }
+            &--description {
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &--type {
+                    font-style: italic;
+                    font-size: 14px;
+                }
+                &--text {
+                    padding: $cardDescriptionPadding;
+                }
+                & a {
+                    display: inline;
+                }
+            }
+            &--languages {
+                height: 10%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                & i {
+                    font-size: $cardLanguagesLogoSize;
+                }
+                & img {
+                    width: $cardLanguagesLogoSize;
+                    height: $cardLanguagesLogoSize;
+                }
+            }
+            &--links {
+                height: 10%;
+                margin: 10px auto;
+                & a {
+                    & button {
+                        width: 100px;
+                        border: $cardBorder;
+                        border-radius: $cardButtonRadius;
+                    }
+                }
+            }
+        }
+    }
+    &--footer {
+        height: 5%;
+        @include section-footer     
+    }    
 }
