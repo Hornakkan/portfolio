@@ -261,7 +261,7 @@ i {
   flex-direction: column;
 }
 .projects--card--content--soon {
-  height: 230px;
+  height: 255px;
 }
 .projects--card--content--soon--title {
   text-align: center;
