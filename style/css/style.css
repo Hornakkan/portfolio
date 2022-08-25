@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -69,7 +65,7 @@ i {
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-family: sans-serif, "Roboto", "Montserrat";
+  font-family: sans-serif;
   font-size: 25px;
   margin: 0 50px;
 }
@@ -79,7 +75,7 @@ i {
 }
 .skills--subtitle {
   height: 5%;
-  font-family: sans-serif, "Roboto", "Montserrat";
+  font-family: sans-serif;
   font-size: 16px;
   font-style: italic;
   margin: 0 50px;
@@ -173,7 +169,7 @@ i {
   background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg");
 }
 .skills--list--name {
-  font-family: sans-serif, "Roboto", "Montserrat";
+  font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
 }
@@ -191,6 +187,23 @@ i {
   color: #8f56c4;
 }
 
+.swiper {
+  width: 100%;
+  height: 88vh;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+.swiper-slide {
+  max-width: 350px;
+}
+
+.mySwiper {
+  height: 100%;
+  width: 100%;
+}
+
 .projects {
   background-color: #b3b3b3;
   width: 100%;
@@ -202,7 +215,7 @@ i {
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-family: sans-serif, "Roboto", "Montserrat";
+  font-family: sans-serif;
   font-size: 25px;
   margin: 0 50px;
 }
@@ -212,7 +225,7 @@ i {
 }
 .projects--subtitle {
   height: 5%;
-  font-family: sans-serif, "Roboto", "Montserrat";
+  font-family: sans-serif;
   font-size: 16px;
   font-style: italic;
   margin: 0 50px;
@@ -220,12 +233,6 @@ i {
 .projects--content {
   height: 85%;
   width: 90%;
-  margin: 0 auto;
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .projects--card {
   width: 350px;
@@ -244,12 +251,12 @@ i {
   display: flex;
 }
 .projects--card--picture img {
-  width: 90%;
+  max-width: 90%;
   margin: 10px auto;
   border-radius: 5px;
 }
 .projects--card--picture--soon img {
-  width: 310px;
+  max-width: 310px;
   height: 150px;
   margin: 10px auto;
   border-radius: 5px;
@@ -332,6 +339,20 @@ i {
 .projects--footer i {
   font-size: 40px;
   color: #8f56c4;
+}
+
+@media screen and (max-width: 1600px) {
+  .projects--card--content--description--text {
+    overflow: auto;
+  }
+  .projects--card--content--soon {
+    overflow: hidden;
+  }
+  .projects--card--picture--soon img {
+    width: 80%;
+    height: auto;
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

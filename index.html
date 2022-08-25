@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">    
     <link rel="stylesheet" href="./style/css/style.css">
     <title>Sebastien Lacour</title>
 </head>
@@ -109,194 +111,217 @@
         <div class="projects" id="projects">
             <div class="projects--title"><p>Projects</p><a href="#skills"><i class="bi bi-arrow-up-circle"></i></a></div>
             <div class="projects--subtitle">Les projets sur lesquels j'ai travaillé, dans le cadre de ma formation Epitech ou bien perso</div>
-            <div class="projects--content">
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://lh3.googleusercontent.com/pw/AL9nZEVScG5HQb0GadKrxzjkgmR4Hmh5lsJvFerGOTzsDXPdbL1t0BJ5iWSD7pRa7PUT0aCqXaeonzpiEUL-AaWf5G9ZvU2tZcmcTlE3M3uE5rTL_0S-nzbl6K1jCEXwGA4EvGhKSp3YzJIemjfBKO84plm8=w1917-h937-no?authuser=0" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">My Shop</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Epitech</p>
-                            <p class="projects--card--content--description--text">
-                                Site de e-commerce avec son interface d'administration en PHP avec possibilité de s'inscrire et de s'authentifier de manière sécurisée, search bar et filtres.
-                            </p>
+            <div class="swiper">
+                <div class="mySwiper">
+                    <div class="swiper-wrapper projects--content">
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/my-shop.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">My Shop</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Epitech</p>
+                                    <p class="projects--card--content--description--text">
+                                        Site de e-commerce avec son interface d'administration en PHP avec possibilité de s'inscrire et de s'authentifier de manière sécurisée, search bar et filtres.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>            
+                                    <i class="devicon-php-plain colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/my_shop" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>            
-                            <i class="devicon-php-plain colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/free-ads.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">Free Ads</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Epitech</p>
+                                    <p class="projects--card--content--description--text">
+                                        Site de petites annonces gratuit avec interface d'administration. Login, register, filter bar, search bar, possiblités d'upload des images et liens de partage vers les réseaux sociaux.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>            
+                                    <i class="devicon-php-plain colored"></i>
+                                    <i class="devicon-laravel-plain-wordmark colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />                            
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/FreeAds" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>                    
                         </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/my_shop" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/post-it.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">Post-it</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Epitech</p>
+                                    <p class="projects--card--content--description--text">
+                                        Interface de sticky notes avec utilisation de l'API fournie par Epitech pour la persistance de données, notes classables par drag and drop.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />                                
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/post-it" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>                    
                         </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/twp.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">YOWL</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Epitech</p>
+                                    <p class="projects--card--content--description--text">
+                                        Clone de Trello avec installation et configuration d'un headless Wordpress afin de pouvoir utilsier son API et faire le lien avec la base de données mySQL.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />                
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/post-it" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>                    
+                        </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/yowl.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">TWP</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Epitech</p>
+                                    <p class="projects--card--content--description--text">
+                                        Projet de groupe ayant pour objectif de produire un site de reviews et commentaires avec Vue.js pour le front et Laravel pour le back via une API à développer.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                    <i class="devicon-php-plain colored"></i>
+                                    <i class="devicon-laravel-plain-wordmark colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />                
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/yowl" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>                    
+                        </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/faq-accordion.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">FAQ Accordion</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Perso</p>
+                                    <p class="projects--card--content--description--text">
+                                        Défi frontend mentor où je devais partir d'un design imposé et développer un composant de type FAQ en accordéon pour desktop et pour mobile.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/faq-accordion-card-main" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>                    
+                        </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture"><img src="./img/appmeteo.jpg" alt="project picture"></div>
+                            <div class="projects--card--content">
+                                <div class="projects--card--content--title">AppMeteo</div>
+                                <div class="projects--card--content--description">
+                                    <p class="projects--card--content--description--type">projet Perso</p>
+                                    <p class="projects--card--content--description--text">
+                                        Appli meteo en Javascript en lien avec l'API de <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> pour fournir les données basées sur la géolocalisation de l'utilisateur après validation de sa part.
+                                    </p>
+                                </div>
+                                <div class="projects--card--content--languages">
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-sass-original colored"></i>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </div>
+                                <div class="projects--card--content--links">
+                                    <a href="https://github.com/Hornakkan/AppMeteoJS" target="_blank">
+                                        <button>Voir le code</button>
+                                    </a>
+                                </div>
+                            </div>                    
+                        </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture--soon"><img src="./img/javascript-01.jpg" alt="project picture"></div>
+                            <div class="projects--card--content--soon">
+                                <p class="projects--card--content--soon--title">Coming soon ...</p>
+                                <p class="projects--card--content--soon--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquam quos modi dolores minima odio accusamus consectetur et nam facere distinctio eligendi itaque, neque omnis repellendus numquam possimus doloremque corporis molestiae cum dolor.</p>
+                            </div>                    
+                        </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture--soon"><img src="./img/javascript-02.jpg" alt="project picture"></div>
+                            <div class="projects--card--content--soon">
+                                <p class="projects--card--content--soon--title">Coming soon ...</p>
+                                <p class="projects--card--content--soon--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquam quos modi dolores minima odio accusamus consectetur et nam facere distinctio eligendi itaque, neque omnis repellendus numquam possimus doloremque corporis molestiae cum dolor.</p>
+                            </div>                    
+                        </div>
+                        <!-- -->
+                        <div class="swiper-slide projects--card">
+                            <div class="projects--card--picture--soon"><img src="./img/javascript-03.jpg" alt="project picture"></div>
+                            <div class="projects--card--content--soon">
+                                <p class="projects--card--content--soon--title">Coming soon ...</p>
+                                <p class="projects--card--content--soon--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquam quos modi dolores minima odio accusamus consectetur et nam facere distinctio eligendi itaque, neque omnis repellendus numquam possimus doloremque corporis molestiae cum dolor.</p>
+                            </div>                    
+                        </div>
+                        <!-- -->
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://camo.githubusercontent.com/cd25deafb8701ce8be97e07656119cf268a16fce1f80f2d2c99c54d1170e0959/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f414d2d4a4b4c56416d6f32747a58622d4d4f52737648664c54314978725871787a6b346530746b55746c6a6d67667458543758324234636165384c64567659354b3847416a6938766a4d316e725856727641484e5437727257645f4463736655327649504e4b6d64564a5f76614d54663771655f45543468786c796131594f595637427a426a6b3969714833565632464474334a4146626a653566723d77313931392d683933312d6e6f3f61757468757365723d30" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">Free Ads</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Epitech</p>
-                            <p class="projects--card--content--description--text">
-                                Site de petites annonces gratuit avec interface d'administration. Login, register, filter bar, search bar, possiblités d'upload des images et liens de partage vers les réseaux sociaux.
-                            </p>
-                        </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>            
-                            <i class="devicon-php-plain colored"></i>
-                            <i class="devicon-laravel-plain-wordmark colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />                            
-                        </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/FreeAds" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://camo.githubusercontent.com/fdbd74c3884e5ce52a1281094333b27995e29c65fc47f1355c12c3f1809e7302/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f414c396e5a4557373839726c414b6b3247696956396c38484c6665374e782d5179797166555071546f33624969447268314378364a554f6368525a4d52306968377a3543796b42546b6f75546c65396a757370684d613478586d51384832714c30494a6c334a79647030493655314a4e46425f70574f32683842774c773567735345506b5064316651394442334b4963396e5f45774e6356666f55593d77313931392d683933322d6e6f3f61757468757365723d30" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">Post-it</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Epitech</p>
-                            <p class="projects--card--content--description--text">
-                                Interface de sticky notes avec utilisation de l'API fournie par Epitech pour la persistance de données, notes classables par drag and drop.
-                            </p>
-                        </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />                                
-                        </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/post-it" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://camo.githubusercontent.com/1a92294a51ee153856143710b7ca5951baec79671e8c5c68b59dbfb00c10fc45/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f414c396e5a45574b3959594c4e306267665f6f617836776b393165484c57467238673437456847524530345879515a64614352696a70523678307a6a6330716a36424f634b523859752d70673978345948374a66716e4a2d31735873477166505358366c477531344a5346346156326b784d70744952654d766d6858707457483970526e773237734661715174796244574f584b30596a694278534f3d77313931382d683933362d6e6f3f61757468757365723d30" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">YOWL</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Epitech</p>
-                            <p class="projects--card--content--description--text">
-                                Clone de Trello avec installation et configuration d'un headless Wordpress afin de pouvoir utilsier son API et faire le lien avec la base de données mySQL.
-                            </p>
-                        </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />                
-                        </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/post-it" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://lh3.googleusercontent.com/pw/AL9nZEWSqah89UoykBSXOkEBYGdys8lAgeukBAjK8hJfBWs512SlePx7WLn4YQ5-w5IU2Q3A6L7K6Wsc3o4c5ONDzmW_9D_Nmk6BXqJtusblAHlxKlflz3AKXpL_JAU7K4OW6wiiOy2qMKn0BZG8FBJs2MP2=w1123-h546-no?authuser=0" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">TWP</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Epitech</p>
-                            <p class="projects--card--content--description--text">
-                                Projet de groupe ayant pour objectif de produire un site de reviews et commentaires avec Vue.js pour le front et Laravel pour le back via une API à développer.
-                            </p>
-                        </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>
-                            <i class="devicon-php-plain colored"></i>
-                            <i class="devicon-laravel-plain-wordmark colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />                
-                        </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/yowl" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://lh3.googleusercontent.com/dUMAKaOfmDdw8RQQV60_W4DWOWTwenWRWaIz2wTYNxrNPafTgN9C6Gp8X2HMixpghCSOLSrcH7Qm8AJFfJFlYJKvD89lM3DVFuXzLkT4g9CqqElpYqeaylcBNYKTgnl35F_8mpFSc1toH5MDmoRBpiv_W7Nx9YoO3dOh4KL6aQhHH7-EFpxsc3ECkSK6hvNpJVY8o4QKiBy_i3PiyTiC6wAm_mW_PVSEaShZ7xA5h7VNkTGpCDZ9WDdz4OM2AhvdhFDCqBEsSuhAyrsPJfU-9pyEhYlxC82exri-d2f29pqIP4WYpyOLPcu0HILR7PKD-tMAuwmdNy4-Nq35QauHJE9kvBvv0gsqD8IAJi37jwIJrIWq7966VYgStt16HCEkXWStcHhD2gqdzaotMECSuY_S6WhDIoYI9cddIm7FOG1KiI72hZIw_ucR9ImTZWElPx-LY-yYZEEl0seE1z8Gh2aoJ1p2_w7tK9xN4SV3ft1X0kza8c-Vw4fc9xKjX8WKXu6tDTyWBRj_snJQX1QmH5QsAwXMYHFUNCJ4GO7KlC014kJ_SvDghvN7X2d5x8rH0YqLZ8KyuX50Ldyjf9Gukod7vE_drgcAQeFJ6lnmdsP59hC9SKhz2da3zC1Y4n1q9m5Imp-izXG-7ppGbg8SImjwhoIfX3HliOpnre3AYLX0s2roDkeBjtw3doZYFv7zaF4ly8EPVU2S0Axlwysb7EsZ3GTl3DtFR9C95KVIJ-YE30Xhc0XoLCMyly03PA=w1919-h933-no?authuser=0" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">FAQ Accordion</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Perso</p>
-                            <p class="projects--card--content--description--text">
-                                Défi frontend mentor où je devais partir d'un design imposé et développer un composant de type FAQ en accordéon pour desktop et pour mobile.
-                            </p>
-                        </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                        </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/faq-accordion-card-main" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture"><img src="https://lh3.googleusercontent.com/6DwLCK8CR9H5Gde3aVYOvnE-27R9Fxb1ZBMQPPUL8Hm6zc4XGjeKpqYrh3mzZBgrpjKyATjDv3jzt0j_xSJWJlOcBeuzeTCKopym73zkvq-JQZ9oTfpUXwOkerx8wylFxQtO30s9bH3NHXD7o4LCL3Zg0XH8zMIXJgxfxgjgPJJ-FuS9UkBo5u9tMQ89hhQkIqzPFxpUiMUSJYIcff3NiVi_nUOFlXd4EuQJdl7AiCGH4ewW-zwIwkzdYrX5AdmK3VkWsZInJByv2DZRaDlSlX6oS72hcUlWnjAuRM9FBsIlUlPZhzjy_0oTtOvKYp_E4-5azL-exT2E2-eiQ-QaJq40td_j5hs_HXNf2OXsiucuayecoYG1UWigHlNpg8ZDg5Is8_K18XpvxfSGZwgToMP79nsi8ax9DX0CjxAiZVNx35uCDDRJzAd2wRiYHHwKA4mlXrrytuhKHjVawVKeS5Fp5ZFSqrL0bKVYDwwzS7Bn_UzCLq2PZhcTQjGrKypUhkl1b-DXmpZCa0N69eRkXQrvoUcpv4OwmC3eIeFb9k_mm8jxZPjIe0o1zEyiq3Z4JRcqkSbWAsuAPZqk5y2V26JXpKD6qcpfpnTpWcqIzTv_9cFk6RfeQ8TecFBBmntt5HS07KpzGfyclwYmnkNc2La9JtKvjM_UQdI0Cok3oCOev2xQCQLUKu0BH4iS0Cl3SOKwRtmutsxtjc6pIw0AoatBh16cUaRFumwgP1Sc7RBJL_LZ8MYgeo7zmj1qzA=w1902-h933-no?authuser=0" alt="project picture"></div>
-                    <div class="projects--card--content">
-                        <div class="projects--card--content--title">AppMeteo Accordion</div>
-                        <div class="projects--card--content--description">
-                            <p class="projects--card--content--description--type">projet Perso</p>
-                            <p class="projects--card--content--description--text">
-                                Appli meteo en Javascript en lien avec l'API de <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> pour fournir les données basées sur la géolocalisation de l'utilisateur après validation de sa part.
-                            </p>
-                        </div>
-                        <div class="projects--card--content--languages">
-                            <i class="devicon-html5-plain-wordmark colored"></i>
-                            <i class="devicon-css3-plain-wordmark colored"></i>
-                            <i class="devicon-sass-original colored"></i>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                        </div>
-                        <div class="projects--card--content--links">
-                            <a href="https://github.com/Hornakkan/AppMeteoJS" target="_blank">
-                                <button>Voir le code</button>
-                            </a>
-                        </div>
-                    </div>                    
-                </div>
-                <!-- -->
-                <div class="projects--card">
-                    <div class="projects--card--picture--soon"><img src="./img/javascript-01.jpg" alt="project picture"></div>
-                    <div class="projects--card--content--soon">
-                        <p class="projects--card--content--soon--title">Coming soon ...</p>
-                        <p class="projects--card--content--soon--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aliquam quos modi dolores minima odio accusamus consectetur et nam facere distinctio eligendi itaque, neque omnis repellendus numquam possimus doloremque corporis molestiae cum dolor. Est nisi sequi, facilis cumque cupiditate nesciunt.</p>
-                    </div>                    
-                </div>
-                <!-- -->
             </div>
         <div class="projects--footer"><a href="#bio"><i class="bi bi-arrow-down-circle"></i></a></div>
         </div>
@@ -308,6 +333,9 @@
         </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/app.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 </body>
 </html>
