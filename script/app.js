@@ -1,9 +1,9 @@
 const swiper = new Swiper('.mySwiper', {
   // Optional parameters
-  slidesPerView: 5,
-  spaceBetween: 20,
-  slidesPerGroup: 5,
-  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 10,
+  slidesPerGroup: 4,
+  loop: false,
   centerSlide: 'true',
   fade: 'true',
   grabCursor: 'true',
@@ -15,6 +15,7 @@ const swiper = new Swiper('.mySwiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',

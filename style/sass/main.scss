@@ -221,7 +221,9 @@ i {
 
 .mySwiper {
     height: 100%;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .projects {
@@ -260,7 +262,8 @@ i {
         // justify-content: center;
     }
     &--card {
-        width: 350px;
+        min-width: 240px;
+        width: 360px;
         height: 60%;
         background-color: $cardBgColor;
         border: $cardBorder;
