@@ -206,6 +206,28 @@ i {
   overflow: hidden;
 }
 
+.swiper-navBtn {
+  color: #7a7a7a;
+  transition: color 0.3s ease-in-out;
+}
+.swiper-navBtn:hover {
+  color: #8f56c4;
+}
+.swiper-navBtn::before {
+  font-size: 40px;
+}
+.swiper-navBtn::after {
+  font-size: 40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #7a7a7a;
+  transition: color 0.3s ease-in-out;
+}
+.swiper-pagination-bullet:hover {
+  background-color: #8f56c4;
+}
+
 .projects {
   background-color: #b3b3b3;
   width: 100%;
