@@ -196,6 +196,7 @@ i {
   align-items: center;
 }
 .swiper-slide {
+  min-width: 260px;
   max-width: 350px;
 }
 

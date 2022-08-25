@@ -215,6 +215,7 @@ i {
         align-items: center;
     }
     &-slide {
+        min-width: 260px;
         max-width: 350px;
     }
 }
