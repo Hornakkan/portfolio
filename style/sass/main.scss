@@ -378,4 +378,18 @@ i {
             display: flex;
         }
     }
+
+    .projects--card {
+        &--picture {
+            height: fit-content;
+        }
+        &--content {
+            &--languages {
+                height: fit-content;
+            }
+            &--links {
+                height: fit-content;
+            }
+        }
+    }
 }

@@ -6,6 +6,7 @@ const swiper = new Swiper('.mySwiper', {
   loop: true,
   centerSlide: 'true',
   fade: 'true',
+  grabCursor: 'true',
   // direction: 'vertical',
   // slidesPerView: 2,
   // spaceBetween: 30,

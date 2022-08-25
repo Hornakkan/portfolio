@@ -353,6 +353,15 @@ i {
     height: auto;
     display: flex;
   }
+  .projects--card--picture {
+    height: fit-content;
+  }
+  .projects--card--content--languages {
+    height: fit-content;
+  }
+  .projects--card--content--links {
+    height: fit-content;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
