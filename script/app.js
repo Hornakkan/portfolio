@@ -51,11 +51,30 @@ const swiper = new Swiper('.mySwiper', {
 const txtAnim = document.querySelector('.home--content--text');
 
 new Typewriter(txtAnim, {
+  // loop: true,
   deleteSpeed: 40
 })
 .changeDelay(80)
-.typeString('Moi c\'est John Doe,')
+.typeString('Moi c\'est Sébastien,')
 .pauseFor(300)
-.typeString('<strong> Dev full-stack</strong>')
-.deleteChars(14)
+.typeString('<strong> Dev web</strong> !')
+.pauseFor(1000)
+.deleteChars(6)
+.typeString('<span style="color: #1572b6ff; font-weight: 600;"> CSS</span> !')
+.pauseFor(1000)
+.deleteChars(5)
+// .typeString('<span style="color: #cb6699ff; font-weight: 600;"> Sass</span> !')
+// .pauseFor(1000)
+// .deleteChars(6)
+.typeString('<span style="color: #6181b6ff; font-weight: 600;"> php</span> !')
+.pauseFor(1000)
+.deleteChars(5)
+// .typeString('<span style="color: #fd4f31ff; font-weight: 600;"> Laravel</span> !')
+// .pauseFor(1000)
+// .deleteChars(9)
+.typeString('<span style="color: #41b883ff; font-weight: 600;"> Vue</span> !')
+.pauseFor(1000)
+.deleteChars(5)
+// .typeString('<span style="color: #f0db4fff; font-weight: 600;"> Javascript</span> !')
+.typeString('<span style="color: #cebd4f; font-weight: 600;"> Javascript</span> !')
 .start()

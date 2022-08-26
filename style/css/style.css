@@ -43,11 +43,23 @@ i {
 }
 
 .links {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   color: white;
   font-weight: 600;
+  margin: 0 auto;
+  width: 30%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
 }
 
 .home {
@@ -119,7 +131,7 @@ i {
 }
 .home--footer i {
   font-size: 40px;
-  color: #8f56c4;
+  color: #333;
 }
 
 .skills {
@@ -248,7 +260,7 @@ i {
 }
 .skills--footer i {
   font-size: 40px;
-  color: #8f56c4;
+  color: #333;
 }
 
 .swiper {
@@ -276,7 +288,7 @@ i {
   transition: color 0.3s ease-in-out;
 }
 .swiper-navBtn:hover {
-  color: #8f56c4;
+  color: #bfbfbf;
 }
 .swiper-navBtn::before {
   font-size: 40px;
@@ -290,11 +302,11 @@ i {
   transition: color 0.3s ease-in-out;
 }
 .swiper-pagination-bullet:hover {
-  background-color: #8f56c4;
+  background-color: #bfbfbf;
 }
 
 .projects {
-  background-color: #b3b3b3;
+  background: #b3b3b3 url("../../img/projects.jpg") center/cover no-repeat;
   width: 100%;
   height: auto;
   display: flex;
@@ -310,7 +322,7 @@ i {
 }
 .projects--title i {
   font-size: 40px;
-  color: #8f56c4;
+  color: #333;
 }
 .projects--subtitle {
   height: 5%;
@@ -428,7 +440,7 @@ i {
 }
 .projects--footer i {
   font-size: 40px;
-  color: #8f56c4;
+  color: #333;
 }
 
 @media screen and (max-width: 1600px) {

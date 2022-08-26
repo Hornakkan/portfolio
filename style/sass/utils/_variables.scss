@@ -12,11 +12,12 @@ $homeMediaFontColor: #f1f1f1;
 $homeFontColor: #333;
 $skillsBgColor: #f9f9f9;
 $projectsBgColor: #b3b3b3;
-$arrowColor: #8f56c4;
+// $arrowColor: #8f56c4;
+$arrowColor: #333;
 $cardBorderColor : #7a7a7a;
 $cardBgColor: #f9f9f9;
 $swiperNavBtn: #7a7a7a;
-$swiperNavBtnHover: #8f56c4;
+$swiperNavBtnHover: lighten($arrowColor, 55%);
 
 // Values
 $homeFontSize: 16px;
