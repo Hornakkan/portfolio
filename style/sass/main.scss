@@ -12,6 +12,8 @@
 
 body {
     margin: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 a {
@@ -27,10 +29,35 @@ i {
     justify-content: center;
 }
 
-.home {
-    background-color: $homeBgColor;
+.bi.bi-arrow-up-circle, .bi.bi-arrow-down-circle {
+    font-size: 40px;
+    color: $homeMediaFontColor;
+    background-color: $homeMediaBtnColor;
+    border-radius: 50%;
+    &:hover {
+        color: $homeMediaBtnColor;
+        background-color: $homeMediaFontColor;
+    }
+}
+
+.wrapper {
     width: 100%;
-    height: 100vh;    
+    height: 100%;
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.home {
+    background: $homeBgColor url('../../img/home.jpg') center / cover no-repeat;
+    width: 100%;
+    height: 100%;    
     display: flex;
     flex-direction: column;
     &--title {
@@ -42,6 +69,48 @@ i {
         height: 80%;
         overflow: hidden;
         margin: $contentMargin;
+        &--text {
+            font-size: 50px;
+            padding-top: 250px;
+            padding-left: $homeMarginLeft;
+        }
+        &--medias {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: $homeMarginLeft;
+            margin: 20px 0 40px 0;
+            &--btn {
+                width: $homeMediaBtnSize;
+                height: $homeMediaBtnSize;
+                border-radius: 50%;
+                background-color: $homeMediaBtnColor;
+                // margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & a {
+                    text-decoration: none;
+                    color: $homeMediaFontColor;
+                    font-size: $homeMediaSize;
+                }
+            }
+        }
+    }
+    & .homebtn {
+        text-decoration: none;
+        color: $homeFontColor;
+        width: fit-content;
+        margin-left: $homeMarginLeft;
+        background: transparent;
+        padding: 10px 30px;
+        border-radius: 3px;
+        border: 2px solid $homeMediaBtnColor;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background: $homeMediaBtnColor;
+            color: $homeMediaFontColor;
+        }
     }
     &--footer {
         height:5%;
@@ -62,10 +131,10 @@ i {
         font-family: $fontFamily;
         font-size: 25px;
         margin: $titleMargin;
-        & i {
-            font-size: 40px;
-            color: $arrowColor;
-        }
+        // & i {
+        //     font-size: 40px;
+        //     color: $arrowColor;
+        // }
     }
     &--subtitle {
         height: 5%;

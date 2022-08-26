@@ -47,3 +47,15 @@ const swiper = new Swiper('.mySwiper', {
   //   el: '.swiper-scrollbar',
   // },
 });
+
+const txtAnim = document.querySelector('.home--content--text');
+
+new Typewriter(txtAnim, {
+  deleteSpeed: 40
+})
+.changeDelay(80)
+.typeString('Moi c\'est John Doe,')
+.pauseFor(300)
+.typeString('<strong> Dev full-stack</strong>')
+.deleteChars(14)
+.start()
