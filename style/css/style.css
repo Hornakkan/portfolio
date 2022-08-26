@@ -135,7 +135,7 @@ i {
 }
 
 .skills {
-  background-color: #f9f9f9;
+  background: #f9f9f9 url("../../img/skills.jpg") center/cover no-repeat;
   width: 100%;
   height: 100vh;
   display: flex;
