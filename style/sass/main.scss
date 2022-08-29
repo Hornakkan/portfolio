@@ -82,8 +82,9 @@ i {
         overflow: hidden;
         margin: $contentMargin;
         &--text {
+            min-height: 400px;
             font-size: 50px;
-            padding-top: 250px;
+            padding-top: $homeMarginLeft;
             padding-left: $homeMarginLeft;
         }
         &--medias {
@@ -498,5 +499,31 @@ i {
                 height: fit-content;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .home--content--text {
+        padding-left: 5%;
+    }
+    .home--content--medias {
+        padding-left: 4%;
+        max-width: 250px;
+        justify-content: left;
+    }
+    .home .homebtn {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home--content--text {
+        padding-left: 5%;
+    }
+    .home--content--medias {
+        padding-left: 5%;
+    }
+    .home .homebtn {
+        margin-left: 5%;
     }
 }
