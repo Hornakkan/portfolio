@@ -1,3 +1,4 @@
+// Slider pour les projets
 const swiper = new Swiper('.mySwiper', {
   // Optional parameters
   slidesPerView: 4,
@@ -7,11 +8,6 @@ const swiper = new Swiper('.mySwiper', {
   centerSlide: 'true',
   fade: 'true',
   grabCursor: 'true',
-  // direction: 'vertical',
-  // slidesPerView: 2,
-  // spaceBetween: 30,
-  // slidesPerGroup: 2,
-
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -43,11 +39,10 @@ const swiper = new Swiper('.mySwiper', {
       spaceBetween: 10,
     },
   }
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
 
+
+// Animation du texte de la page d'accueil
 const txtAnim = document.querySelector('.home--content--text');
 
 new Typewriter(txtAnim, {
@@ -75,6 +70,16 @@ new Typewriter(txtAnim, {
 .typeString('<span style="color: #41b883ff; font-weight: 600;"> Vue</span>')
 .pauseFor(1000)
 .deleteChars(3)
-// .typeString('<span style="color: #f0db4fff; font-weight: 600;"> Javascript</span> !')
+// .typeString('<span style="color: #f0db4fff; font-weight: 600;"> Javascript</span>')
 .typeString('<span style="color: #cebd4f; font-weight: 600;"> Javascript</span>')
 .start()
+
+
+// Toggler de classe du menu hamburger
+const hamburgerButton = document.querySelector('.nav-toggler');
+const navigation = document.querySelector('.links');
+
+hamburgerButton.addEventListener('click', () => {
+  hamburgerButton.classList.toggle('active')
+  navigation.classList.toggle('active')
+})

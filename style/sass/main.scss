@@ -48,21 +48,74 @@ i {
 
 .links {
     position: fixed;
-    top: 0;
-    right: 0;
-    color: white;
+    width: 200px;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    top: calc($navTogglerTop - 5px);
+    left: calc($navTogglerLeft - 5px);
     font-weight: 600;
-    margin: 0 auto;
-    width: 30%;
-    right: 50%;
-    transform: translateX(50%);
-    & ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        box-shadow: 0 0 10px rgba(0,0,0,0.4);
-        border-radius: 5px;
-        backdrop-filter: blur(5px);
+    border: 2px solid $homeFontColor;
+    border-radius: $cardRadius;
+    z-index: 5;
+    transform: translateX(-120%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    & a {
+        color: $homeFontColor;
+        font-family: $fontFamily;
+        font-size: 20px;
+        margin: 10px 0;
+        transition: color 0.5s ease-in-out;
+        &:hover {
+            color: lighten($homeFontColor, 30%);
+            text-decoration: underline;
+        }
+    }
+    &.active {
+        transform: translate(0);
+    }
+}
+
+.nav-toggler {
+    position: fixed;
+    z-index: 10;
+    top: $navTogglerTop;
+    left: $navTogglerLeft;
+    width: $navTogglerSize;
+    height: $navTogglerSize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    &.active .l1 {
+        transform: translateY(0px) rotate(135deg);
+    }
+    &.active .l2 {
+        opacity: 0;
+    }
+    &.active .l3 {
+        transform: translateY(0px) rotate(-135deg);
+    }
+}
+
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $homeFontColor;
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+    &.l1 {
+        transform: translateY(-10px);
+    }
+    &.l3 {
+        transform: translateY(10px);
     }
 }
 
@@ -144,10 +197,7 @@ i {
         font-family: $fontFamily;
         font-size: 25px;
         margin: $titleMargin;
-        // & i {
-        //     font-size: 40px;
-        //     color: $arrowColor;
-        // }
+        padding: $titlePadding;
     }
     &--subtitle {
         height: 5%;
@@ -155,6 +205,7 @@ i {
         font-size: 16px;
         font-style: italic;
         margin: $subtitleMargin;
+        padding: $subtitlePadding;
     }
     &--content {
         height: 85%;
@@ -344,6 +395,7 @@ i {
         font-family: $fontFamily;
         font-size: 25px;
         margin: $titleMargin;
+        padding: $titlePadding;
         & i {
             font-size: 40px;
             color: $arrowColor;
@@ -355,6 +407,7 @@ i {
         font-size: 16px;
         font-style: italic;
         margin: $subtitleMargin;
+        padding: $subtitlePadding;
     }
     &--content {
         height: 85%;
@@ -516,14 +569,8 @@ i {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .home--content--text {
-        padding-left: 5%;
-    }
-    .home--content--medias {
-        padding-left: 5%;
-    }
-    .home .homebtn {
-        margin-left: 5%;
+@media screen and (max-width: 500px) {
+    .bi.bi-arrow-up-circle, .bi.bi-arrow-down-circle {
+        display: none;
     }
 }

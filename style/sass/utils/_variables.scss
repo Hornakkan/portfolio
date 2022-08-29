@@ -1,8 +1,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 // $fontFamily: sans-serif, 'Roboto', 'Montserrat';
-$fontFamily: sans-serif;
+$fontFamily: 'Quicksand', sans-serif;
 
 // Colors
 $skillsLogoGray: #7a7a7a;
@@ -20,12 +21,17 @@ $swiperNavBtn: #7a7a7a;
 $swiperNavBtnHover: lighten($arrowColor, 55%);
 
 // Values
+$navTogglerTop: 10px;
+$navTogglerLeft: 15px;
+$navTogglerSize: 35px;
 $homeFontSize: 16px;
 $homeMediaSize: 27px;
 $homeMediaBtnSize: 50px;
 $homeMarginLeft: 240px;
 $titleMargin: 0 50px;
+$titlePadding: 0 20px;
 $subtitleMargin: 0 50px;
+$subtitlePadding: 0 20px;
 $footerMargin: 0 50px;
 $contentMargin: 0 auto;
 $pictureRadius: 5px;
