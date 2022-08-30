@@ -585,8 +585,40 @@ i {
     }
 }
 
+@media screen and (max-width: 950px) {
+    .projects--card--picture {
+        & img {
+            max-width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .projects {
+        background-position: inherit;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .projects--card {
+        max-width: 90%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .bi.bi-arrow-up-circle, .bi.bi-arrow-down-circle {
         display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skills--subtitle {
+        font-size: 14px;
+    }
+    .projects--subtitle {
+        font-size: 14px;
+    }
+    .projects--card {
+        max-width: 250px;
     }
 }
