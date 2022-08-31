@@ -48,6 +48,7 @@ i {
 
 .links {
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
     position: fixed;
     width: 200px;
     min-height: 20vh;
@@ -151,7 +152,7 @@ i {
         overflow: hidden;
         margin: $contentMargin;
         &--text {
-            // min-height: 400px;
+            min-height: 400px;
             font-size: 50px;
             padding-top: $homeMarginLeft;
             padding-left: $homeMarginLeft;
@@ -638,6 +639,7 @@ i {
     .home--content--text {
         padding-left: 5%;
         padding-top: 5%;
+        min-height: 200px;
     }
     .home--content--medias {
         padding-left: 4%;
