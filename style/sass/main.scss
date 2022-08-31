@@ -526,7 +526,8 @@ i {
                 align-items: center;
                 justify-content: space-around;
                 & i {
-                    font-size: $cardLanguagesLogoSize;
+                    // font-size: $cardLanguagesLogoSize;
+                    font-size: clamp(20px, 2vw, 40px);
                 }
                 & img {
                     width: $cardLanguagesLogoSize;
