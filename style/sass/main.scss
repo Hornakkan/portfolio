@@ -47,6 +47,7 @@ i {
 }
 
 .links {
+    backdrop-filter: blur(5px);
     position: fixed;
     width: 200px;
     min-height: 20vh;
@@ -54,7 +55,6 @@ i {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    backdrop-filter: blur(5px);
     top: calc($navTogglerTop - 5px);
     left: calc($navTogglerLeft - 5px);
     font-weight: 600;
@@ -508,9 +508,9 @@ i {
 }
 
 .about {
-    background: $projectsBgColor url('../../img/chinois.jpg') center / cover no-repeat;
+    background: $aboutBgColor url('../../img/chinois.jpg') center / cover no-repeat;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     &--title {
@@ -536,12 +536,12 @@ i {
     }
     &--hobbies {
         &--tabs {
-            background-color: #070707;
+            background: $cardBgColor;
             max-width: 80%;
             margin: 100px auto;
             border-radius: $cardRadius;
-            border: 1px solid $homeMediaBtnColor;
-            color: $homeMediaFontColor;
+            border: 1px solid $homeFontColor;
+            color: $homeFontColor;
             display: grid;
             grid-template-rows: min-content 1fr;
             & .tabs-btn-container {
@@ -549,7 +549,7 @@ i {
                 border-bottom: 1px solid $homeMediaBtnColor;
                 & .tab {
                     border: none;
-                    background: transparent;
+                    background-color: transparent;
                     color: darken($homeMediaFontColor, 50%);
                     flex-basis: 100%;
                     display: flex;
@@ -569,7 +569,10 @@ i {
                         border-top-right-radius: calc($cardRadius - 1px);
                     }
                     &.active-tab {
-                        background-image: linear-gradient(45deg, rgb(63, 63, 230), rgb(233, 103, 233));
+                        // background-image: linear-gradient(45deg, rgb(63, 63, 230), rgb(233, 103, 233));
+                        background-color: #DCD9D4;
+                        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+                        background-blend-mode: multiply,multiply;
                         font-weight: bolder;
                         color: $homeMediaFontColor;
                     }
