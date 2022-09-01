@@ -87,6 +87,7 @@ hamburgerButton.addEventListener('click', () => {
 // Onglets page about
 const tabs = [...document.querySelectorAll('.tab')];
 const tabContents = [...document.querySelectorAll('.tab-content')];
+const aboutPage = document.querySelector('#about');
 
 tabs.forEach(tab => tab.addEventListener('click', tabsAnimation));
 
@@ -99,4 +100,19 @@ function tabsAnimation(e) {
 
   tabs[indexToShow].classList.add('active-tab');
   tabContents[indexToShow].classList.add('active-tab-content');
+
+  switch (indexToShow) {
+    case 0:
+      aboutPage.style.background = "url('./img/chinois.jpg') center / cover no-repeat";
+      break;
+    case 1:
+      aboutPage.style.background = "url('./img/wing-chun.jpg') center / cover no-repeat";
+      break;
+    case 2:
+      aboutPage.style.background = "url(./img/warhammer.jpg)";
+      break;
+  
+    default:
+      break;
+  }
 }

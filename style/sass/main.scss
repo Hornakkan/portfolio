@@ -48,7 +48,8 @@ i {
 
 .links {
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    background-color: #ffffff9e;
     position: fixed;
     width: 200px;
     min-height: 20vh;
@@ -530,15 +531,20 @@ i {
     }
     &--bio {
         height: 5%;
+        width: 90%;
+        background-color: $bioBgColor;
         font-family: $fontFamily;
         font-size: 16px;
         font-style: italic;
         margin: $subtitleMargin;
         padding: $subtitlePadding;
+        border: 1px solid $homeFontColor;
+        border-radius: $cardRadius;
+        margin: 0 auto;
     }
     &--hobbies {
         &--tabs {
-            background: $cardBgColor;
+            background: $tabsBgColor;
             max-width: 80%;
             margin: 100px auto;
             border-radius: $cardRadius;
@@ -572,8 +578,8 @@ i {
                     }
                     &.active-tab {
                         // background-image: linear-gradient(45deg, rgb(63, 63, 230), rgb(233, 103, 233));
-                        background-color: #DCD9D4;
-                        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+                        // background-color: #DCD9D4;
+                        background: $activeTabBg;
                         background-blend-mode: multiply,multiply;
                         font-weight: bolder;
                         color: $homeMediaFontColor;
@@ -668,6 +674,11 @@ i {
 @media screen and (max-width: 520px) {
     .projects--card {
         max-width: 90%;
+    }
+}
+@media screen and (max-height: 500px) {
+    .skills--title {
+        height: 8%;
     }
 }
 
