@@ -603,10 +603,51 @@ i {
                 &.active-tab-content {
                     visibility: visible;
                     opacity: 1;
-                }                
+                }
             }
         }
     }
+}
+
+.youtube { 
+    background: $youtubeBgColor;
+    border: none;
+    border-radius: 50% / 10%;
+    color: $youtubeTriangleColor;
+    font-size: 0.7em; /* change this to change size */
+    height: 3em;
+    margin: 20px auto;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-indent: 0.1em;
+    transition: all 150ms ease-out;
+    width: 4em;
+    &:hover {
+        background: $youtubeHoverColor;
+    }
+    &::before { 
+    background: inherit;
+    border-radius: 5% / 50%;
+    bottom: 9%;
+    content: "";
+    left: -5%;
+    position: absolute;
+    right: -5%;
+    top: 9%;
+    }  
+    &::after {
+        border-style: solid;
+        border-width: 1em 0 1em 1.732em;
+        border-color: transparent transparent transparent $youtubeTriangleColor;
+        content: ' ';
+        font-size: 0.75em;
+        height: 0;
+        margin: -1em 0 0 -0.75em;
+        top: 50%;
+        position: absolute;
+        width: 0;
+    }        
 }
 
 @media screen and (max-width: 1600px) {
