@@ -4,6 +4,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@keyframes flash {
+  0% {
+    color: #9fa;
+    text-shadow: 0 0 7px #9fa;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #9fa;
+    text-shadow: 0 0 7px #9fa;
+  }
+}
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -40,6 +54,61 @@ i {
 .bi.bi-arrow-up-circle:hover, .bi.bi-arrow-down-circle:hover {
   color: #333;
   background-color: #f1f1f1;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.lettre {
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+}
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.lettre:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  z-index: 0;
 }
 
 .wrapper {
@@ -522,7 +591,12 @@ i {
   padding: 0 20px;
   border: 1px solid #333;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 1% auto;
+}
+.about--bio--link {
+  display: inline;
+  font-weight: 600;
+  color: #333;
 }
 .about--hobbies--tabs {
   background: rgba(249, 249, 249, 0.8823529412);
@@ -533,6 +607,11 @@ i {
   color: #333;
   display: grid;
   grid-template-rows: min-content 1fr;
+}
+.about--hobbies--tabs--link {
+  display: inline;
+  font-weight: 600;
+  color: #333;
 }
 .about--hobbies--tabs .tabs-btn-container {
   display: flex;
@@ -585,6 +664,39 @@ i {
   visibility: visible;
   opacity: 1;
 }
+.about--hobbies--tabs .tab-content--links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about--hobbies--tabs .tab-content--links--btn {
+  text-decoration: none;
+  color: #333;
+  width: fit-content;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+.about--hobbies--tabs .tab-content--links--btn a {
+  color: #333;
+  width: 100px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.about--hobbies--tabs .tab-content--links--btn a:hover {
+  background-color: #333;
+  color: #f1f1f1;
+}
+.about--hobbies--tabs .tab-content .youtube {
+  margin: 0 20px;
+}
+.about--hobbies--tabs .tab-content--like {
+  display: flex;
+}
+.about--hobbies--tabs .tab-content--like .bi-hearts {
+  color: #f24848;
+  font-size: 1.4em;
+  align-items: baseline;
+}
 
 .youtube {
   background: red;
@@ -598,7 +710,6 @@ i {
   position: relative;
   text-align: center;
   text-indent: 0.1em;
-  transition: all 150ms ease-out;
   width: 4em;
 }
 .youtube:hover {

@@ -1,0 +1,14 @@
+@keyframes flash {
+    0% {
+        color: $flashColor;
+        text-shadow: 0 0 7px $flashColor;
+    }
+    90% {
+        color: $lettreColor;
+        text-shadow: none;
+    }
+    100% {
+        color: $flashColor;
+        text-shadow: 0 0 7px $flashColor;
+    }    
+}
