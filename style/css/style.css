@@ -451,7 +451,7 @@ i {
 }
 .projects--card {
   width: 360px;
-  background-color: #f9f9f9;
+  background-color: #f3f3f3;
   border: 1px solid #7a7a7a;
   border-radius: 5px;
   margin: 10px 20px;
@@ -461,16 +461,14 @@ i {
   justify-content: space-around;
 }
 .projects--card--picture {
-  height: 40%;
+  object-fit: cover;
   display: flex;
-  width: 80%;
+  border-bottom: 1px solid #7a7a7a;
 }
 .projects--card--picture img {
-  height: 100%;
   width: 100%;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 5px;
+  height: 100%;
+  border-radius: 4px 4px 0 0;
 }
 .projects--card--picture--soon img {
   max-width: 310px;
@@ -542,9 +540,19 @@ i {
   margin: 10px auto;
 }
 .projects--card--content--links a button {
-  width: 100px;
-  border: 1px solid #7a7a7a;
+  text-decoration: none;
+  color: #333;
+  width: fit-content;
+  background: transparent;
   border-radius: 5px;
+  border: 2px solid #333;
+  color: #333;
+  width: 100px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.projects--card--content--links a button:hover {
+  background-color: #333;
+  color: #f1f1f1;
 }
 .projects--footer {
   height: 5%;
@@ -697,6 +705,9 @@ i {
   font-size: 1.4em;
   align-items: baseline;
 }
+.about--hobbies--tabs .tab-content--like--span {
+  font-weight: 600;
+}
 
 .youtube {
   background: red;
@@ -714,6 +725,7 @@ i {
 }
 .youtube:hover {
   background: darkorange;
+  box-shadow: 0 0 10px darkorange;
 }
 .youtube::before {
   background: inherit;
