@@ -783,6 +783,18 @@ i {
     background-position: inherit;
   }
 }
+@media screen and (max-height: 400px) {
+  .home--content--text {
+    min-height: 100px;
+    font-size: 45px;
+  }
+  .skills--content {
+    padding-top: 10px;
+  }
+  .skills--list--logo i {
+    font-size: 35px;
+  }
+}
 @media screen and (max-width: 520px) {
   .projects--card {
     max-width: 90%;
