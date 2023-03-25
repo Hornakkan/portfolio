@@ -44,7 +44,7 @@
 // Animation du loader
 const loader = document.querySelector('.loader');
 
-loader;addEventListener('load', () => {
+loader.addEventListener('load', () => {
   loader.classList.add('fondu-out');
 });
 
