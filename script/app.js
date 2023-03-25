@@ -44,10 +44,9 @@
 // Animation du loader
 const loader = document.querySelector('.loader');
 
-loader.addEventListener('load', () => {
-  loader.classList.add('fondu-out');
+window.addEventListener('load', () => {
+  loader.classList.toggle('fondu-out');
 });
-
 
 // Animation du texte de la page d'accueil
 const txtAnim = document.querySelector('.home--content--text');
